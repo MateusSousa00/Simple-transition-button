@@ -1,0 +1,43 @@
+body {
+    background-image: url('BG_SITE.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flip-button {
+    background-color: #54595F;
+    color: #FFCE00;
+    font-size: 50px;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.flip-button.flipped {
+    background-color: #FFCE00;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.flip-button.flipped span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: medium;
+    transform: scaleX(1);
+}
+
+.wrapped-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
